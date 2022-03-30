@@ -1,0 +1,31 @@
+public class ArrayBasic {
+    public static void main(String[] args) {
+
+        int[] numbers = new int[10];
+        String[] names = new String[5];
+
+        numbers[0] = 5;
+        numbers[1] = 9;
+        numbers[2] = 6;
+
+        System.out.println(numbers[2]);// print (numbers[2]) = 6
+        System.out.println(numbers.length);// print 10
+        System.out.println(names.length);// print 5
+        System.out.println(numbers[3]);// print 0 not stored
+
+        int sum = numbers[0] + numbers[1];
+
+        System.out.println(" The sum is " + sum);
+
+        //System.out.println(numbers); // referances type
+
+        // doing are very helpful because  loops
+        for (int index = 0; index < numbers.length; index++) {
+            System.out.println(numbers[index]);// print the rest list of arrays
+
+
+        }
+
+
+    }
+}
