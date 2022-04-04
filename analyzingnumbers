@@ -1,0 +1,33 @@
+import  java.util.Scanner;
+public class analyzingnumbers {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int []number  = new int[10];
+        int sum =0;
+
+        // add numbers to array as input
+        System.out.print ("Please enter" + " " +number.length +" " + "numbers: " );
+        for(int index = 0; index < number.length ; index++) {
+            number[index] = input.nextInt();
+        }
+
+        for (int value : number)
+        {
+            sum += value;
+        }
+
+        double average = sum / number.length;
+
+        int count = 0 ;
+                for( int value : number ) {
+                    if ( value > average )
+                        count++;
+                }
+
+        System.out.println("Average is " + average);
+        System.out.println("Number of elements above the average is "
+                + count);
+    }
+
+    }
+
